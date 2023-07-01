@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(IMAGE2.jpeg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed; 
+    background-attachment: fixed;
+    text-align: center;
+    animation: bgblur 2s;
+    backdrop-filter: blur(2px);
+
+}
+
+
+img{
+    
+    margin-top: 5vh;
+    box-shadow: 5px 5px 15px rgb(41, 41, 41);
+    transition: 300ms;
+    animation: imgbump 2s;
+    animation-delay: 1s;
+    
+}
+
+@keyframes imgbump
+{
+    50%
+    {
+        transform: scale(1.2);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+img:hover
+{
+    transform: scale(1.2);
+    transition: 300ms;
+}
+.links{
+    text-align: center;
+    margin-top: 10vh;
+    animation: fadein 1.5s ease-in;
+    
+}
+
+@keyframes fadein
+{
+    0%
+    {
+        opacity: 0;
+       
+    }
+    70%
+    {
+        opacity: 1;
+        
+    }
+
+   
+
+}
+.links a{
+    display: block;
+    text-align: center;
+    margin: 20px 10px;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    padding: 1vh;
+    padding-top: 3vh;
+    height: 7vh;
+    width: 50vw;
+    position: relative;
+    background-color: #debbe7;
+    text-decoration: none;
+    color: #0f0b0f;
+    border-radius: 5vh;
+    font-family: 'RocknRoll One', sans-serif;
+    font-size: 3.5vh;
+    
+}
+
+.links a:hover
+{
+    background-color: rgb(203, 145, 220);
+    color: #401c3e;
+    transition: 0.3s;
+    transform: scale(1.07);
+}
+
+h6{
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+    margin-left: auto;
+    font-size: small;
+    font-family: 'Stick', sans-serif;
+    color: rgb(164, 121, 56);
+}
+
+@media screen and (max-width: 375px)
+{
+    .links a {
+        font-size: 2.5vh;
+    }
+}
